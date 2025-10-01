@@ -1,3 +1,16 @@
+> ⚠️ **Security Notice (Simplified Implementation)**
+>
+> For simplicity in this project:
+> 
+> - All users share the **same password**.
+> - The **TOTP (Two-Factor Authentication) secret** is identical for all users.
+> - The TOTP secret is **stored in plaintext** in the database.
+>
+> **Warning:** This is **insecure** and should **never** be done in real applications. It is only used here to simplify the exam implementation.
+>
+> For proper security practices when handling passwords and TOTP, see: [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+
+
 ## React Client Application Routes
 
 - Route `/`: Displays a list of all posts and offers a button to create a new post.
